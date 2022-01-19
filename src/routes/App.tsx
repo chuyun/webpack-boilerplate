@@ -5,7 +5,7 @@ import {
   Route,
   Navigate,
 } from 'react-router-dom';
-import router from '@/router';
+import AppRoutes from '@/router';
 
 import './App.css';
 
@@ -19,12 +19,12 @@ const App = () => {
           <Routes>
             <Route path="/" element={<HookDemo />} />
             <Route path="/app/index" element={<Navigate to="/" />} />
-            {router.map(({ path, component }) => {
+            {AppRoutes.map((route) => {
               return (
                 <Route
-                  key={path}
-                  path={path}
-                  element={component}
+                  key={route.path}
+                  path={route.path}
+                  element={<route.element />}
                 />
               );
             })}
