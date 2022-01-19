@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
 
 # https://gist.github.com/dahjelle/8ddedf0aebd488208a9a7c829f19b9e8
 echo "ESLint 开始检查待提交文件...";
@@ -15,3 +16,4 @@ do
     fi
   fi
 done
+

@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
 
 # 当前分支名称
 current_branch_name=$(git rev-parse --abbrev-ref HEAD)
@@ -29,3 +31,4 @@ if [ $commit ]; then
   echo -e '\033[1;33m 如果该检测误判了，请反馈我，并使用git push --no-verify 来推送代码即可'
   exit 1
 fi
+

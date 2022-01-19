@@ -3968,7 +3968,7 @@ human-signals@^3.0.1:
   resolved "https://registry.nlark.com/human-signals/download/human-signals-3.0.1.tgz#c740920859dafa50e5a3222da9d3bf4bb0e5eef5"
   integrity sha1-x0CSCFna+lDloyItqdO/S7Dl7vU=
 
-husky@^7.0.4:
+husky@^7.0.0:
   version "7.0.4"
   resolved "https://registry.npmmirror.com/husky/download/husky-7.0.4.tgz#242048245dc49c8fb1bf0cc7cfb98dd722531535"
   integrity sha1-JCBIJF3EnI+xvwzHz7mN1yJTFTU=
