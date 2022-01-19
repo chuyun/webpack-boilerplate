@@ -1,0 +1,38 @@
+{
+  "extends": ["stylelint-config-recommended-scss"],
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "mixin",
+          "extend",
+          "content",
+          "include",
+          "function",
+          "if",
+          "else"
+        ]
+      }
+    ],
+    "selector-type-no-unknown": [
+      true,
+      {
+        "ignoreTypes": [
+          "Page",
+          "page",
+          "view",
+          "text"
+        ]
+      }
+    ],
+    "selector-pseudo-class-no-unknown": [true,{
+      "ignorePseudoClasses": [
+        "global"
+      ]
+    }]
+  }
+}
