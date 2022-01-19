@@ -8,7 +8,7 @@ const paths = require('./paths')
 
 module.exports = {
     // Where webpack looks to start building the bundle
-    entry: [paths.src + '/index.js'],
+    entry: [paths.src + '/index.tsx'],
 
     // Where webpack outputs the assets and bundles
     output: {
@@ -69,7 +69,8 @@ module.exports = {
             {test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: 'asset/resource'},
 
             // Fonts and SVGs: Inline files
-            {test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/inline'},
+            // {test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/inline'},
+            {test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/resource'},
         ],
     },
 
