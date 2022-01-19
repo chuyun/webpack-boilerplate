@@ -1,2 +1,3 @@
 /commitlint.config.js
 /postcss.config.js
+/.husky/lint-keyword.js
